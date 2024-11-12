@@ -1,0 +1,301 @@
+ *{
+     padding:0;
+     margin:0;
+     box-sizing: border-box;
+ }
+ :root{
+     --dark:#303030;
+     --co:#16e0bd;
+     --ch:#16e0be8a;
+     --fo:"Source Sans 3", sans-serif;
+     --ft:"Source Code Pro", monospace;
+     --bg: linear-gradient(135deg, rgba(0, 0, 0, 0.600) 0%, rgba(0, 0, 0, 0.600) 100%);
+ }
+ body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .container{
+     overflow: hidden;
+ }
+
+ /*          nav            */
+
+ nav{
+     margin-bottom:50px;
+ }
+ nav p{
+     font-size:20px;
+     color:var(--dark);
+     font-family:"Source Code Pro", monospace;
+ }
+ 
+ /*         section           */
+
+ section{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     direction: rtl;
+ }
+ section .introduction{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ section .introduction .one{
+     display: flex;
+     flex-direction: column;
+     direction: ltr;
+ }
+ section .introduction .one h1{
+     margin-bottom:0.25rem;
+     font-weight: 300;
+     font-family:var(--fo);
+     font-size:3rem;
+     line-height:1em;
+     margin-bottom:1rem;
+ }
+ section .introduction .one div{
+    background-color:var(--co);
+    width:250%;
+    padding:10px;
+    padding-left:50px;
+    direction: rtl;
+    transform: translateX(-20.5em);
+ }
+ section .introduction .one div p{
+    font-family:var(--fo);
+    font-size:30px;
+    font-weight:300;
+    color:var(--dark);
+    text-transform: capitalize;
+ }
+ section h1 strong{
+    display: block;
+ }
+ section .introduction .two{
+     background:url('photo/pro.png') center no-repeat;
+     background-size: cover;
+     height:15rem;
+     width:18rem;
+     box-shadow:0.25em 0.25em 0.75em rgba(0, 0, 0, 0.37);
+     position: relative;
+ }
+
+ /*            main             */
+
+ main{
+     background: var(--bg) , url('photo/laptop.webp')no-repeat center center;
+     background-size: cover;
+     margin:5em 0;
+ }
+ .main{
+     background-size: cover;
+     color:#fff;
+     text-align: center;
+     padding:40px;
+ }
+ main .main .services{
+     width:15vw;
+     font-family:var(--fo);
+     display: contents;
+     justify-content: center;
+     color: var(--co);
+     font-size:1.5em;
+     border-bottom:5px solid var(--co);
+     line-height:1em;
+ }
+ main .main .services hr{
+     width:3em;
+     display:inline-flex;
+     justify-content: center;
+ }
+ main .main .main-two{
+     display: flex;
+     justify-content: center;
+     padding:20px;
+     flex-wrap: wrap;
+ }
+ main .main .main-two div{
+     width:17rem;
+     padding:30px 10px;
+ }
+ main .main .main-two div h3{
+     font-size:1.25em;
+     text-transform: capitalize;
+     font-family:var(--fo);
+ }
+ main .main .main-two div p{
+     font-size:14px;
+     font-weight:300;
+     color:#ffffff9a;
+     padding:10px 0;
+ }
+ main .main button{
+     background-color:var(--co);
+     color: #000;
+     border:none;
+     padding:8px 25px;
+     margin-bottom:5%;
+     transition: background-color 0.5s ease;
+ }
+ main .main button:hover{
+     cursor: pointer;
+     background-color:var(--ch);
+     
+ }
+
+ /*      article       */
+
+ article{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom:5rem;
+     flex-wrap: wrap-reverse;
+ }
+ article .art{
+     width:30rem;
+     display: flex;
+ }
+ article .art strong{
+     font-family:var(--fo);
+     font-size:40px;
+     font-weight: 600;
+     margin-left:50px;
+ }
+ article .art h5{
+     font-family:var(--ft);
+     font-size:100%;   
+     font-weight: 300;  
+     background-color:var(--co);
+     width:165%;
+     padding:10px;
+     padding-left:10%;
+ }
+ article .art p{
+     font-family: var(--fo);
+     width:30rem;
+     padding:10px;
+     padding-left:50px;
+     color: #000;
+
+ }
+  article .art-t{
+     background-image:url('photo/istockphoto-1437819745-612x612.jpg');
+     background-size: cover;
+     height:23rem;     
+     width:15rem;
+  }
+
+ /*         content            */
+
+ .content{
+     background-color:var(--dark);
+ }
+ .content .un{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .content .un h1{
+     text-transform: capitalize;
+     font-family:var(--fo);
+     color: #fff;
+     font-size:3rem;
+     padding-top:15px;
+ }
+ .content .un p{
+     color:var(--co);
+     font-family:var(--fo);
+     font-weight: 600;
+     padding:30px;
+     padding-top: 0;
+ }
+ .content .duex{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+ }
+ .content .duex div{
+     overflow: hidden;
+     width:18rem;
+     height:19rem;
+     background-color:#16e0be6c;
+ }
+ .content .duex img{
+     width:18rem;
+     height:19rem;
+     /*                 التدرج                   السرعه           */
+     transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1) , opacity 250ms linear ;
+ }
+ .content .duex img:hover{
+     transform: scale(1,1.4);
+     opacity:0.5;
+ }
+
+ /*       footer       */
+
+ footer{
+     background-color: #0c0c0c;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color:var(--co);
+     font-family:var(--fo);
+     font-weight: 600;
+     letter-spacing:1px;
+     padding:10px;
+     font-size:18px;
+     margin-top:3rem;
+ }
+ footer div a{
+     color:var(--co);
+     text-decoration: none;
+     transition: background-color 0.5s ease;
+ }
+ footer div{
+     padding:15px;
+ }
+ footer div i{
+     padding:10px;
+     font-size:20px;
+     transition: background-color 0.5s ease;
+ }
+ footer div a:hover, footer div i:hover{
+     color: var(--ch);
+ }
+
+ /*       media        */
+
+ @media(max-width:580px)
+ {
+    
+     /*     section      */
+
+     section{
+         display: flex;
+         text-align: center;
+     }
+     section .introduction .one div{
+         padding-left:0px;
+         transform: translateX(-10em);
+     }
+
+     /*     article      */
+    
+     article .art{
+         display: flex;
+         text-align: center;
+     }
+     article .art div {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+ }
+
+
